@@ -49,7 +49,7 @@ public class StringList {
 	 *  
 	 * @post | toArray().length == old(toArray().length)
 	 * @post | toArray()[index] == value
-	 * @post | IntStream.range(0, toArray().length).allMatch(i -> toArray()[i] == old(toArray())[i])
+	 * @post | IntStream.range(0, toArray().length).allMatch(i -> i == index || toArray()[i] == old(toArray())[i])
 	 * 
 	 * @mutates | this
 	 */
