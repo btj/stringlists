@@ -5,6 +5,8 @@ import java.util.stream.IntStream;
 
 /**
  * Each instance of this class stores a list of strings.
+ * 
+ * @invar | toArray() != null
  */
 public class StringList {
 	
